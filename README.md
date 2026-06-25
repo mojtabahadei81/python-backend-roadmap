@@ -1,1 +1,1 @@
-This is my python project
+This is my AWESOME Python Backend project
