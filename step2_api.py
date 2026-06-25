@@ -22,7 +22,7 @@ class User(BaseModel):
 def get_user(url:str) -> None:
     verificated_users = []
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=5)
         response.raise_for_status()
         users = response.json()
         for user in users:
